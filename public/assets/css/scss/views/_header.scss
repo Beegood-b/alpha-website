@@ -1,0 +1,118 @@
+// ==================== HEADER ====================
+
+.header {
+  position: fixed;
+  width: 100vw;
+  top: -200px;
+  z-index: 15;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 2rem;
+  background: $bg-color;
+  box-shadow: $box-shadow;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ul {
+    display: flex;
+    margin: 0;
+
+    li {
+      padding: 0 2rem;
+      text-decoration: none;
+      list-style: none;
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 400;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all .7s ease;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $text-color;
+
+      &:hover {
+        transition: all 1s ease;
+        color: $text-color;
+      }
+    }
+  }
+}
+
+#progress-bar {
+  $progress: 0;
+  height: 0.5rem;
+  width: $progress;
+  background: $accent-color;
+  text-shadow: $text-shadow;
+}
+
+// ==================== BURGER ====================
+
+.open {
+  display: flex !important;
+}
+
+.burger {
+  display: none;
+  position: relative;
+  z-index: 100;
+  align-items: center;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $text-color;
+    transition: all 0.3s ease 0s;
+  }
+
+  &:before {
+    top: 0;
+  }
+
+  &:after {
+    bottom: 0;
+  }
+
+  &.active {
+    span {
+      transform: scale(0);
+    }
+
+    &::before {
+      top: 50%;
+      transform: rotate(-45deg) translate(0, -50%);
+    }
+
+    &::after {
+      bottom: 50%;
+      transform: rotate(45deg) translate(0, 50%);
+    }
+  }
+
+  span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: $text-color;
+  }
+}

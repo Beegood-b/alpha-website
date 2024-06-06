@@ -1,0 +1,137 @@
+// ==================== GALLERY BUTTON ====================
+
+#showMoreBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: $text-color;
+  box-shadow: $box-shadow;
+  outline: none;
+  border: none;
+  width: 45px;
+  height: 45px;
+  opacity: 0.8;
+  margin-top: 1rem;
+
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all .5s ease;
+  }
+
+  i {
+    color: $white;
+    font-size: 12px;
+  }
+}
+
+// ==================== SCROLL TO TOP BUTTON ====================
+
+#button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $text-color;
+  border-radius: 8px;
+  border: none;
+  box-shadow: $box-shadow;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+  z-index: 10;
+
+  i {
+    color: $white;
+    font-size: 12px;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: all 0.5s ease;
+  }
+}
+
+#button.active {
+  bottom: 30px;
+  pointer-events: auto;
+  opacity: 0.8;
+}
+
+// ==================== COOKIES & BUTTONS ====================
+
+.cookies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  max-width: 100%;
+  width: 80%;
+  left: -50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 1rem 1.7rem 1.5rem;
+  transition: all 0.3s ease;
+  z-index: 20;
+
+  &.show {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .data {
+    margin-top: 1rem;
+
+    p {
+      font-size: 16px;
+      font-weight: 100;
+      padding: 0.2rem 1rem;
+
+      a {
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .buttons {
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .button {
+      border: none;
+      background-color: $bg-color;
+      padding: 0.4rem;
+      border-radius: 4px;
+      cursor: pointer;
+      width: calc(100% / 2 - 10px);
+      font-size: 16px;
+
+      &:nth-child(1) {
+        background: $black;
+        color: $white;
+      }
+
+      &:nth-child(2) {
+        color: $black;
+      }
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.9);
+        opacity: 0.8;
+        color: $white;
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}

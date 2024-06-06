@@ -1,0 +1,331 @@
+// ==================== MAIN CONTENT ====================
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+// ==================== PREVIEW ====================
+
+.preview-container {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 4rem 0 0 0;
+  padding: 0 0.5rem;
+}
+
+.preview-card {
+  box-shadow: rgba(0, 0, 0, 0.1) 50px 20px 50px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 2rem;
+  background-color: $white;
+
+  h5 {
+    font-size: clamp(16px, 8vw, 30px);
+    font-weight: 400;
+    padding: 1rem 0;
+    color: $white;
+    text-shadow: $text-shadow;
+  }
+
+  p {
+    font-size: clamp(16px, 8vw, 20px)
+  }
+
+  img {
+    padding: 1rem 0;
+  }
+}
+
+// ==================== ABOUT US ====================
+
+.about {
+  background: url("/public/assets/img/about.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 4rem;
+  margin: 4rem 0 0 0;
+}
+
+.about-heading {
+  text-align: center;
+
+  span {
+    background-color: transparent;
+  }
+
+  h2 {
+    padding-bottom: 4rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(40px, 8vw, 60px);
+    font-weight: 400;
+    text-shadow: $text-shadow;
+  }
+
+  p {
+    font-size: clamp(25px, 4vw, 35px);
+    font-weight: 300;
+    padding-bottom: 3rem;
+    color: $bg-color;
+    text-shadow: $text-shadow;
+  }
+}
+
+// ==================== JOB DESCRIPTION ====================
+
+.job-description {
+  margin-bottom: 8rem;
+}
+
+.job-description-heading {
+  text-align: right;
+
+  h2 {
+    padding: 6rem 0 5rem 0;
+    color: $white;
+    text-shadow: $text-shadow;
+    font-size: clamp(30px, 8vw, 40px);
+    font-weight: 400;
+  }
+}
+
+.job-description-card {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.card {
+  width: 100px;
+  height: 550px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: 0 10px;
+  transition: all 2s ease;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $bg-color;
+    background: $gradient;
+  }
+
+  .description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    width: 500px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+    padding-left: 1rem;
+
+    ul{
+      list-style: square;
+
+      li {
+        color: $white;
+        text-shadow: $text-shadow;
+        padding-top: 5px;
+        font-size: 18px;
+      }
+    }
+
+    h4 {
+      text-transform: uppercase;
+      color: $white;
+      text-shadow: $text-shadow;
+      padding: 0.5rem 0;
+      margin: 1rem 0;
+    }
+  }
+}
+
+input {
+  display: none;
+}
+
+input:checked+label {
+  width: 520px;
+}
+
+input:checked+label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"],
+.card[for="c2"],
+.card[for="c3"],
+.card[for="c4"] {
+  background: $gradient;
+}
+
+// ==================== OUR WORK ====================
+
+.our-work {
+  background: $gradient;
+  padding-bottom: 4rem;
+
+  h2 {
+    padding: 4rem 0;
+    padding-left: 5rem;
+    color: $white;
+    text-shadow: $text-shadow;
+    font-size: clamp(30px, 8vw, 40px);
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.gallery {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(9, 1fr);
+
+  a {
+    height: calc($index * 8);
+    width: calc($index * 6);
+    margin: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: $box-shadow;
+    display: none;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.7s ease;
+    }
+  }
+}
+
+.gallery-button {
+  display: grid;
+  place-items: center;
+}
+
+// ==================== COUNTER ====================
+
+.counter-container {
+  text-align: right;
+  margin-bottom: 4rem;
+
+  h2 {
+    padding: 6rem 0 5rem 0;
+    color: $white;
+    text-shadow: $text-shadow;
+    font-size: clamp(30px, 8vw, 40px);
+    font-weight: 400;
+  }
+}
+
+.counter {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  margin: 1rem;
+  width: 250px;
+  height: 250px;
+
+  img {
+    width: calc($index * 4);
+    height: calc($index * 4);
+    text-shadow: $text-shadow;
+  }
+
+  span.num {
+    font-size: clamp(30px, 8vw, 40px);
+    font-weight: 500;
+    color: $white;
+    text-shadow: $text-shadow;
+  }
+
+  span.text {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
+// ==================== PARALLAX ====================
+
+.parallax {
+  background: url("/public/assets/img/opinion.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 4rem;
+}
+
+.parallax-inner {
+  text-align: center;
+
+  h2 {
+    padding-bottom: 4rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: clamp(40px, 8vw, 60px);
+    font-weight: 400;
+    text-shadow: $text-shadow;
+  }
+
+  p {
+    font-size: clamp(25px, 4vw, 40px);
+    font-weight: 300;
+    padding-bottom: 3rem;
+    color: $bg-color;
+    text-shadow: $text-shadow;
+  }
+}
+
+// ==================== FIND US ====================
+
+.find-us {
+  background: $gradient;
+  padding-bottom: 4rem;
+
+  h2 {
+    padding: 4rem 0;
+    padding-left: 5rem;
+    color: $white;
+    text-shadow: $text-shadow;
+    font-size: clamp(30px, 8vw, 40px);
+    font-weight: 400;
+  }
+}
+
+// ==================== PRE-FOOTER CONTAINER ====================
+
+.pre-footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+
+  img {
+    width: calc($index * 10);
+  }
+}

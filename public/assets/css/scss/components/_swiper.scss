@@ -1,0 +1,52 @@
+// ==================== SWIPER ====================
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  transform: scale(2);
+}
+
+.swiper-slide {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    color: $bg-color;
+    text-shadow: $text-shadow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(25px, 8vw, 40px);
+    font-weight: 400;
+    padding-top: 3rem;
+    opacity: 0;
+  }
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: $bg-color;
+}

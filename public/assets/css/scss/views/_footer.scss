@@ -1,0 +1,79 @@
+// ==================== FOOTER ====================
+
+.footer {
+  flex-shrink: 0;
+  background: $gradient;
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+
+    h5 {
+      padding: 3rem 0;
+      font-size: clamp(25px, 8vw, 30px);
+      color: $bg-color;
+      font-weight: 400;
+      text-shadow: $text-shadow;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $bg-color;
+    }
+
+    li {
+      font-size: clamp(16px, 8vw, 20px);
+      font-weight: 200;
+      color: $bg-color;
+      text-shadow: $text-shadow;
+    }
+
+    .social-media ul {
+      display: flex;
+
+      i {
+        font-size: clamp(25px, 8vw, 30px);
+        padding-right: 1.5rem;
+      }
+    }
+
+    .contact ul {
+      i {
+        font-size: clamp(16px, 8 vw, 18px);
+        padding-right: 1rem;
+      }
+    }
+  }
+}
+
+.copyright {
+  padding: 2rem 0 1rem 0;
+
+  .copyright-inner {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      padding: 0 4.5rem;
+      font-size: 12px;
+      font-weight: 100;
+      color: $bg-color;
+      text-shadow: $text-shadow;
+
+      a {
+        color: $bg-color;
+        text-decoration: none;
+      }
+    }
+
+    span a {
+      color: $accent-color;
+      text-decoration: none;
+    }
+  }
+}

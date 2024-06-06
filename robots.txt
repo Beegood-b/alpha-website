@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Disallow: /admin
+Disallow: /partials/footer.php
+
+User-agent: *
+Disallow: /admin
+Disallow: /partials/footer.php
+
+Sitemap: https://alphaconstruction.lv/sitemap.xml

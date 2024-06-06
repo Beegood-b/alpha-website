@@ -1,0 +1,17 @@
+// Base
+@import './base/reset';
+@import './base/variables';
+@import './base/general';
+// Views
+@import './views/header';
+@import './views/footer';
+// Components
+@import './components/buttons';
+@import './components/swiper';
+@import './components/loader';
+@import './components/form';
+// Pages
+@import './pages/privacy';
+@import './pages/index';
+// Media Queries
+@import './base/media-queries';

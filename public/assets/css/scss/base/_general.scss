@@ -1,0 +1,77 @@
+// ==================== GENERAL RULES ====================
+
+body {
+  min-width: 320px;
+  font-family: "Teko", sans-serif;
+  background-color: $bg-color;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.section-title {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.section-title span {
+  position: relative;
+  background-color: $bg-color;
+  padding: 0 3rem;
+  z-index: 10;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  top: 50%;
+  left: 0;
+  border-top: 2px solid $text-color;
+  opacity: 0.2;
+}
+
+.header-wrapper,
+.wrapper,
+.footer-wrapper {
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.hide {
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.show {
+  opacity: 1;
+}
+
+.highlight {
+  color: $black !important;
+}
+
+.open {
+  display: flex !important;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.overlay {
+  display: none;
+}

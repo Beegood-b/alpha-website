@@ -1,0 +1,279 @@
+@media only screen and (max-width: 767px) {
+
+  // ==================== GENERAL RULES ====================
+
+  .section-title span {
+    padding: 0 1rem;
+  }
+
+  // ==================== HEADER ====================
+
+  .header-wrapper {
+    padding-right: 2rem;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    overflow: hidden;
+    padding: 0 2rem;
+    background: $bg-color;
+    animation: burgerAnimation 0.5s;
+
+    ul {
+      flex-direction: column;
+      align-items: end;
+    }
+
+    li {
+      padding: 0.3rem 0 !important;
+      font-size: 25px !important;
+    }
+  }
+
+  @keyframes burgerAnimation {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  // ==================== SWIPER ==================== 
+
+  .swiper {
+    height: 100vh;
+  }
+
+  .swiper-slide {
+    height: 100vh;
+  }
+
+  // ==================== PREVIEW ====================
+
+  .preview-container {
+    display: block;
+  }
+
+  .preview-card {
+    margin-bottom: 1rem;
+    height: auto;
+    padding: 0;
+
+    img,
+    h5,
+    p {
+      padding: 0;
+    }
+
+    p {
+      display: none;
+    }
+
+    img {
+      width: 50px;
+      padding: 1rem 0;
+    }
+
+    h5 {
+      font-weight: 300;
+      padding-bottom: 1rem;
+      color: $text-color;
+      text-shadow: none;
+    }
+  }
+
+  // ==================== ABOUT ====================
+
+  .about {
+    display: grid;
+    place-items: center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
+    margin: 0;
+    margin: 3rem 0 0 0;
+    padding: 0 2rem;
+
+    .about-heading h4 {
+      padding: 2rem 0;
+    }
+
+    .about-heading p {
+      padding: 0;
+    }
+  }
+
+  // ==================== JOB DESC ====================
+
+  .job-description {
+    display: flex;
+    flex-direction: column;
+    margin: 0 !important;
+
+    .job-description-card {
+      display: block;
+      margin-bottom: 4rem !important;
+
+      .card {
+        margin: 0 !important;
+        margin-bottom: 2rem !important;
+        filter: blur(0);
+
+        li {
+          font-size: 20px;
+        }
+      }
+
+      input:checked+label {
+        width: 100% !important;
+      }
+    }
+  }
+
+  // ==================== GALLERY ====================
+
+  .our-work-heading {
+    text-align: center;
+  }
+
+  .our-work h2 {
+    padding: 4rem 0;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    ;
+  }
+
+  // ==================== COUNTER ====================
+
+  .counter-container {
+    margin: 0;
+  }
+
+  .counter-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .counter {
+    height: 50vh;
+  }
+
+  // ==================== PARALLAX ==================== 
+
+  .parallax {
+    display: grid;
+    place-items: center;
+    background-size: cover;
+    background-attachment: scroll;
+    padding: 4rem;
+    height: 100vh;
+  }
+
+  .parallax-inner p {
+    padding: 0;
+  }
+
+  // ==================== LOCATION ====================
+
+  .find-us-heading {
+    text-align: center;
+  }
+
+  .find-us h2 {
+    padding: 4rem 0;
+  }
+
+  // ==================== PRE-FOOTER ==================== 
+
+  .pre-footer {
+    overflow-x: hidden;
+  }
+
+  // ==================== FOOTER ====================
+
+  .footer-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 2rem;
+
+    h5 {
+      padding: 2rem 0 !important;
+    }
+  }
+
+  .details li {
+    padding: 0.1rem 0;
+  }
+
+  .links li {
+    padding: 0.2rem 0;
+  }
+
+  .social-media {
+    display: grid;
+    place-items: center;
+
+    i {
+      padding: 0 1rem !important;
+    }
+  }
+
+  .contact li {
+    padding: 0.2rem 0;
+
+    i {
+      padding-right: 0.5rem !important;
+    }
+  }
+
+  .copyright {
+    padding: 1rem 0;
+
+    .copyright-inner {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .logo-container {
+        display: block;
+      }
+
+      span {
+        margin-top: 0.7rem;
+      }
+    }
+  }
+
+  // ==================== COOKIES & BUTTONS ====================
+
+  .cookies {
+    width: 90%;
+  }
+
+  // ==================== PRIVACY POLICY PAGE ==================== 
+
+  .privacy-policy {
+    padding: 0 1rem;
+  }
+}
