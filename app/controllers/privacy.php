@@ -2,4 +2,4 @@
 
 $title = 'Alpha Construction | Privātuma politika';
 
-require('./app/views/privacy.view.php');
+require './app/views/privacy.view.php';

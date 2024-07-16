@@ -94,30 +94,35 @@ toTop.addEventListener("click", () => {
 
 // lightgallery
 
-lightGallery(document.querySelector('.gallery'));
+let elems = document.querySelectorAll('.our-work-image');
+elems.forEach(elem => {
+  lightGallery(elem, {
+    mode: 'lg-fade',
+    speed: 1000
+  });
+});
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Select the gallery container and the button
-  const gallery = document.getElementById("gallery");
-  const showMoreBtn = document.getElementById("showMoreBtn");
+document.addEventListener('DOMContentLoaded', () => {
+  const showMoreBtn = document.getElementById('showMoreBtn');
+  const ourWorkCategories = document.querySelectorAll('.our-work-category');
 
-  // Select the first half of the images
-  const images = gallery.querySelectorAll("a");
-  const half = Math.ceil(images.length / 2.7); // Calculate the index of the halfway point
-
-  // Initially show only the first half of the images
-  for (let i = 0; i < half; i++) {
-    images[i].style.display = "block";
-  }
-
-  // Event listener for the button to show the other half of the images
-  showMoreBtn.addEventListener("click", function () {
-    // Loop through the second half of the images and show them
-    for (let i = half; i < images.length; i++) {
-      images[i].style.display = "block";
+  // Initially show only the first two categories
+  ourWorkCategories.forEach((category, index) => {
+    if (index >= 2) {
+      category.classList.add('hidden');
     }
-    // Hide the button after all images are shown
-    showMoreBtn.style.display = "none";
+  });
+
+  // Add event listener to the button
+  showMoreBtn.addEventListener('click', () => {
+    ourWorkCategories.forEach((category, index) => {
+      if (index >= 2) {
+        category.classList.toggle('hidden');
+      }
+    });
+
+    // Hide the button after clicking
+    showMoreBtn.style.display = 'none';
   });
 });
 

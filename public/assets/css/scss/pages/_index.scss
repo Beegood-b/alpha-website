@@ -36,11 +36,12 @@
   }
 
   p {
-    font-size: clamp(16px, 8vw, 20px)
+    font-size: clamp(16px, 8vw, 18px);
   }
 
   img {
-    padding: 1rem 0;
+    padding-bottom: 1rem;
+    width: 50px;
   }
 }
 
@@ -139,7 +140,7 @@
     transition: all .3s ease;
     padding-left: 1rem;
 
-    ul{
+    ul {
       list-style: square;
 
       li {
@@ -187,8 +188,7 @@ input:checked+label .description {
   padding-bottom: 4rem;
 
   h2 {
-    padding: 4rem 0;
-    padding-left: 5rem;
+    padding: 4rem 0 4rem 5rem;
     color: $white;
     text-shadow: $text-shadow;
     font-size: clamp(30px, 8vw, 40px);
@@ -197,37 +197,88 @@ input:checked+label .description {
   }
 }
 
-.gallery {
+.our-work-container {
   display: grid;
-  place-items: center;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
 
-  a {
-    height: calc($index * 8);
-    width: calc($index * 6);
-    margin: 1rem;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: $box-shadow;
-    display: none;
-  }
+h4,
+h5,
+.our-work-category .our-work-items li {
+  color: $white;
+  text-shadow: $text-shadow;
+  padding: 2rem 0;
+}
+
+.our-work-heading2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    margin-right: 1rem;
+    filter: grayscale(1) brightness(80%);
+  }
+}
 
-    &:hover {
-      transform: scale(1.2);
-      transition: all 0.7s ease;
+h4 {
+  font-size: clamp(18px, 7vw, 30px);
+  font-weight: 400;
+}
+
+h5 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-size: clamp(16px, 8vw, 20px);
+  font-weight: 300;
+}
+
+.our-work-category {
+  text-align: center;
+
+  .our-work-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+
+    li {
+      list-style: none;
+      font-size: clamp(18px, 8vw, 30px);
     }
   }
+}
+
+.our-work-image {
+  display: flex;
+  justify-content: space-evenly;
+
+a {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+  img {
+    transition: all 0.6s ease;
+    width: calc($index * 7);
+    height: calc($index * 10);
+  }
+}
+
+.our-work-image img.zoomable:hover {
+  transform: scale(1.3);
+}
+
+.list-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .gallery-button {
   display: grid;
   place-items: center;
+  margin-top: 3rem;
 }
+
 
 // ==================== COUNTER ====================
 
@@ -253,8 +304,7 @@ input:checked+label .description {
   height: 250px;
 
   img {
-    width: calc($index * 4);
-    height: calc($index * 4);
+    width: 50px;
     text-shadow: $text-shadow;
   }
 

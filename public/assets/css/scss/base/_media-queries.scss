@@ -87,12 +87,13 @@
 
     img {
       width: 50px;
-      padding: 1rem 0;
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
     }
 
     h5 {
       font-weight: 300;
-      padding-bottom: 1rem;
+      padding-top: 1rem;
       color: $text-color;
       text-shadow: none;
     }
@@ -156,10 +157,14 @@
     padding: 4rem 0;
   }
 
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    ;
+  .our-work-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .our-work-image img {
+    width: calc($index * 7);
+    height: calc($index * 11);
   }
 
   // ==================== COUNTER ====================
