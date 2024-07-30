@@ -286,7 +286,8 @@
     img {
       transition: all 0.6s ease;
       width: calc($index * 7);
-      height: calc($index * 10);
+      height: calc($index * 9.3);
+      object-fit: cover;
     }
   }
 

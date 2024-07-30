@@ -1095,7 +1095,9 @@ h6,
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   width: calc((1vw + 1vh) * 7);
-  height: calc((1vw + 1vh) * 10);
+  height: calc((1vw + 1vh) * 9.3);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .our-work-image img.zoomable:hover {
@@ -1370,7 +1372,7 @@ h6,
   }
   .our-work-image img {
     width: calc((1vw + 1vh) * 7);
-    height: calc((1vw + 1vh) * 11);
+    height: calc((1vw + 1vh) * 9.3);
   }
   .counter-container {
     margin: 0;
