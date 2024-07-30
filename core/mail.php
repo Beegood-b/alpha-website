@@ -23,7 +23,7 @@ if (isset($_POST['btn-send'])) {
         exit();
         // If everything is ok, submit the form
     } else {
-        $to = "artjoms.bugajenkovs@gmail.com";
+        $to = "alpha.construction.latvia@gmail.com";
         $message = "Vārds: $UserName\n\nNumurs: $Phone\n\nTēmats: $Subject\n\nIzziņa: $Msg";
         if (mail($to, $Subject, $message, "From: $Email")) {
             header('location:/?success#consultation');
