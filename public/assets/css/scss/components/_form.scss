@@ -2,13 +2,11 @@
 
 .contact-us {
 
-  h2 {
+  h3 {
     text-align: right;
     padding: 6rem 0 5rem 0;
-    color: $white;
     text-shadow: $text-shadow;
-    font-size: clamp(30px, 8vw, 40px);
-    font-weight: 400;
+    font-weight: 300;
   }
 }
 
@@ -16,6 +14,12 @@
 
   input {
     font-size: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all .6s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
 
     &::placeholder {
       font-weight: 200;
@@ -44,11 +48,18 @@
       height: 200px;
       font-size: 20px;
       font-weight: 200;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      transition: all .6s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
 
     button {
       background: $text-color;
       padding: 0.5rem 5rem;
+      margin: 4rem auto 2rem auto !important;
       text-shadow: $text-shadow;
       font-size: 18px;
 

@@ -92,6 +92,39 @@ toTop.addEventListener("click", () => {
   })
 })
 
+// chevron rotate
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      const chevron = card.querySelector('.description-icon');
+      if (chevron) {
+        chevron.classList.toggle('rotate');
+      }
+    });
+  });
+});
+
+function checkInputBasedOnScreenSize() {
+  const checkbox = document.getElementById('c1');
+  const cardIsOpen = document.querySelector('.description-icon');
+  if (checkbox) {
+    if (window.innerWidth <= 768) {
+      checkbox.checked = true;
+      cardIsOpen.classList.add('rotate');
+    }
+  }
+}
+
+// Initial check when the script loads
+checkInputBasedOnScreenSize();
+
+// Add an event listener to handle window resize
+window.addEventListener('resize', checkInputBasedOnScreenSize);
+
+
+
 // lightgallery
 
 let elems = document.querySelectorAll('.our-work-image');

@@ -47,7 +47,7 @@
         <img src="/public/assets/img/logo2.png" width="60" alt="logo-2">
       </div>
       <span>&copy; <?= date("Y"); ?> Alpha Construction. Visas tiesības aizsargātas.</span>
-      <span>Developed by <a href="https://bugajenkovs.art" target="_blank">bugajenkovs.art</a></span>
+      <span>Developed by <a href="https://easyweb.lv" target="_blank">Easy Web</a></span>
     </div>
   </section>
 

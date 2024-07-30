@@ -1,8 +1,8 @@
 <section class="container contact-us hide" id="consultation">
   <div class="contact-us-heading">
-    <h2 class="section-title"><span>PIETEIKTIES KONSULTĀCIJAI</span></h2>
+    <h3 class="section-title"><span>PIETEIKTIES KONSULTĀCIJAI</span></h3>
   </div>
-  <?php include('./app/views/includes/form.php'); ?>
+  <?php include('./app/views/includes/contact-form.php'); ?>
 </section>
 
 <!-- Buildings container -->

@@ -1,10 +1,15 @@
 <div class="job-description-card">
   <!-- 1 card -->
-  <input type="checkbox" name="slide" id="c1" checked disabled>
+  <input type="checkbox" name="slide" id="c1">
   <label for="c1" class="card hide">
     <div class="number">1</div>
+    <div class="description-header">
+      <h5>Celtniecības darbus</h5>
+      <div class="description-icon">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </div>
     <div class="description">
-      <h4>Celtniecības darbus</h4>
       <ul>
         <li>Skursteņu pilnīga mūrēšana</li>
         <li>Skursteņu skārda detaļu montāža <br>(skursteņa cepure, skursteņa skārda aplode)</li>
@@ -21,11 +26,16 @@
     </div>
   </label>
   <!-- 2 card -->
-  <input type="checkbox" name="slide" id="c2" checked disabled>
+  <input type="checkbox" name="slide" id="c2">
   <label for="c2" class="card hide">
     <div class="number">2</div>
+    <div class="description-header">
+      <h5>Labiekārtošanas darbus</h5>
+      <div class="description-icon">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </div>
     <div class="description">
-      <h4>Labiekārtošanas darbus</h4>
       <ul>
         <li>Noteksistēmu izveide un maiņa</li>
         <li>Atkritumu tvertnes uzstādīšana</li>
@@ -42,11 +52,16 @@
     </div>
   </label>
   <!-- 3 card -->
-  <input type="checkbox" name="slide" id="c3" checked disabled>
+  <input type="checkbox" name="slide" id="c3">
   <label for="c3" class="card hide">
     <div class="number">3</div>
+    <div class="description-header">
+      <h5>Apsaimniekošanas darbus</h5>
+      <div class="description-icon">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </div>
     <div class="description">
-      <h4>Apsaimniekošanas darbus</h4>
       <ul>
         <li>Noteksistēmu tīrīšana</li>
         <li>Jumtu tīrīšana no sniega un lāstekām</li>
@@ -60,11 +75,16 @@
     </div>
   </label>
   <!-- 4 card -->
-  <input type="checkbox" name="slide" id="c4" checked disabled>
+  <input type="checkbox" name="slide" id="c4">
   <label for="c4" class="card hide">
     <div class="number">4</div>
+    <div class="description-header">
+      <h5>Remontdarbus</h5>
+      <div class="description-icon">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </div>
     <div class="description">
-      <h4>Remontdarbus</h4>
       <ul>
         <li>Telpu kosmētiskais remonts <br>(krāsošana, špaktelēšana, tapešu līmēšana)</li>
         <li>Dažādu grīdas segumu maiņa un montāža</li>
@@ -80,5 +100,5 @@
       </ul>
     </div>
   </label>
-</input>
+  </input>
 </div>

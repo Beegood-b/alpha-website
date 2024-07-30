@@ -1,9 +1,13 @@
-@media only screen and (max-width: 767px) {
+@media (max-width: 768px) {
 
   // ==================== GENERAL RULES ====================
 
   .section-title span {
     padding: 0 1rem;
+  }
+
+  .overlay-content {
+    width: 70%;
   }
 
   // ==================== HEADER ====================
@@ -54,7 +58,7 @@
     }
   }
 
-  // ==================== SWIPER ==================== 
+  // ==================== SWIPER ====================
 
   .swiper {
     height: 100vh;
@@ -67,13 +71,18 @@
   // ==================== PREVIEW ====================
 
   .preview-container {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .preview-card {
-    margin-bottom: 1rem;
     height: auto;
     padding: 0;
+
+    &:hover {
+      transform: none !important;
+    }
+
 
     img,
     h5,
@@ -108,7 +117,7 @@
     background-attachment: scroll;
     height: 100vh;
     margin: 0;
-    margin: 3rem 0 0 0;
+    margin: 4rem 0 0 0;
     padding: 0 2rem;
 
     .about-heading h4 {
@@ -133,33 +142,29 @@
 
       .card {
         margin: 0 !important;
-        margin-bottom: 2rem !important;
-        filter: blur(0);
+        margin-bottom: 0.5rem !important;
+
+        &:hover {
+          transform: none !important;
+        }
 
         li {
           font-size: 20px;
         }
-      }
-
-      input:checked+label {
-        width: 100% !important;
       }
     }
   }
 
   // ==================== GALLERY ====================
 
-  .our-work-heading {
+  .our-work h2 {
+    padding-left: 0;
     text-align: center;
   }
 
-  .our-work h2 {
-    padding: 4rem 0;
-  }
-
   .our-work-container {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 
   .our-work-image img {
@@ -177,13 +182,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 4rem;
   }
 
   .counter {
-    height: 50vh;
+
+    &:hover {
+      transform: none;
+    }
   }
 
-  // ==================== PARALLAX ==================== 
+  // ==================== PARALLAX ====================
 
   .parallax {
     display: grid;
@@ -208,7 +217,7 @@
     padding: 4rem 0;
   }
 
-  // ==================== PRE-FOOTER ==================== 
+  // ==================== PRE-FOOTER ====================
 
   .pre-footer {
     overflow-x: hidden;
@@ -245,7 +254,7 @@
   }
 
   .contact li {
-    padding: 0.2rem 0;
+    padding: 0.3rem 0;
 
     i {
       padding-right: 0.5rem !important;
@@ -276,9 +285,9 @@
     width: 90%;
   }
 
-  // ==================== PRIVACY POLICY PAGE ==================== 
+  // ==================== PRIVACY POLICY PAGE ====================
 
   .privacy-policy {
-    padding: 0 1rem;
+    padding: 0 2.5rem;
   }
 }

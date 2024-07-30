@@ -1,7 +1,7 @@
 <section class="container hide">
   <div class="counter-container">
     <div class="counter-heading">
-      <h2 class="section-title"><span>Skaitļi liecina par visu</span></h2>
+      <h3 class="section-title"><span>Skaitļi liecina par visu</span></h3>
     </div>
     <div class="counter-inner d-flex justify-content-center">
       <div class="counter hide">

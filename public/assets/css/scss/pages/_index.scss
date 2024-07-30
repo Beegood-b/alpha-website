@@ -13,7 +13,7 @@
 // ==================== PREVIEW ====================
 
 .preview-container {
-  display: grid;
+  display: flex;
   gap: 0.5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 4rem 0 0 0;
@@ -21,22 +21,21 @@
 }
 
 .preview-card {
-  box-shadow: rgba(0, 0, 0, 0.1) 50px 20px 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   text-align: center;
   border-radius: 12px;
   padding: 2rem;
   background-color: $white;
 
-  h5 {
-    font-size: clamp(16px, 8vw, 30px);
-    font-weight: 400;
-    padding: 1rem 0;
-    color: $white;
-    text-shadow: $text-shadow;
+  &:hover {
+    transform: translateY(-5px);
+    transition: all .6s ease;
   }
 
-  p {
-    font-size: clamp(16px, 8vw, 18px);
+  h5 {
+    padding: 1rem 0;
+    color: $white;
+    font-size: 20px;
   }
 
   img {
@@ -66,17 +65,15 @@
 
   h2 {
     padding-bottom: 4rem;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: clamp(40px, 8vw, 60px);
-    font-weight: 400;
+    color: $white;
     text-shadow: $text-shadow;
+    font-weight: 300;
   }
 
   p {
-    font-size: clamp(25px, 4vw, 35px);
-    font-weight: 300;
     padding-bottom: 3rem;
-    color: $bg-color;
+    color: $white;
+    font-size: 22px;
     text-shadow: $text-shadow;
   }
 }
@@ -90,34 +87,75 @@
 .job-description-heading {
   text-align: right;
 
-  h2 {
+  h3 {
     padding: 6rem 0 5rem 0;
-    color: $white;
     text-shadow: $text-shadow;
-    font-size: clamp(30px, 8vw, 40px);
-    font-weight: 400;
+    font-weight: 300;
   }
 }
 
 .job-description-card {
   height: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 0.5rem;
   margin-bottom: 4rem;
 }
 
-.card {
-  width: 100px;
-  height: 550px;
-  border-radius: 10px;
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 8px;
-  margin: 0 10px;
-  transition: all 2s ease;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+.description-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 2rem;
+  width: 100%;
+
+  .description-icon i {
+    display: grid;
+    place-items: center;
+    color: $white;
+    font-size: 10px;
+    filter: drop-shadow($text-shadow);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 0.5rem;
+    animation: moveDown 1.5s alternate infinite;
+    transition: all .5s ease;
+  }
+}
+
+  @keyframes moveDown {
+    from {
+      transform: translateY(-4px);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateY(4px);
+      opacity: 1;
+    }
+  }
+
+  .card {
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: all 2s ease;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: all .6s ease;
+    }
+
+    h5 {
+      padding: 2rem 0;
+      margin: 0;
+    }
+  }
 
   .number {
     display: flex;
@@ -132,10 +170,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    overflow: hidden;
-    width: 500px;
-    opacity: 0;
-    transform: translateY(30px);
+    width: auto;
     transition-delay: .3s;
     transition: all .3s ease;
     padding-left: 1rem;
@@ -147,235 +182,232 @@
         color: $white;
         text-shadow: $text-shadow;
         padding-top: 5px;
-        font-size: 18px;
       }
     }
 
-    h4 {
+    h5 {
       text-transform: uppercase;
       color: $white;
+      font-weight: 300;
       text-shadow: $text-shadow;
-      padding: 0.5rem 0;
       margin: 1rem 0;
     }
   }
-}
 
-input {
-  display: none;
-}
-
-input:checked+label {
-  width: 520px;
-}
-
-input:checked+label .description {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
-.card[for="c1"],
-.card[for="c2"],
-.card[for="c3"],
-.card[for="c4"] {
-  background: $gradient;
-}
-
-// ==================== OUR WORK ====================
-
-.our-work {
-  background: $gradient;
-  padding-bottom: 4rem;
-
-  h2 {
-    padding: 4rem 0 4rem 5rem;
-    color: $white;
-    text-shadow: $text-shadow;
-    font-size: clamp(30px, 8vw, 40px);
-    font-weight: 400;
-    margin: 0;
+  input {
+    display: none;
   }
-}
 
-.our-work-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5rem;
-}
-
-h4,
-h5,
-.our-work-category .our-work-items li {
-  color: $white;
-  text-shadow: $text-shadow;
-  padding: 2rem 0;
-}
-
-.our-work-heading2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    margin-right: 1rem;
-    filter: grayscale(1) brightness(80%);
+  input:checked+label {
+    height: 600px;
   }
-}
 
-h4 {
-  font-size: clamp(18px, 7vw, 30px);
-  font-weight: 400;
-}
+  .card[for="c1"],
+  .card[for="c2"],
+  .card[for="c3"],
+  .card[for="c4"] {
+    background: $gradient;
+  }
 
-h5 {
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  font-size: clamp(16px, 8vw, 20px);
-  font-weight: 300;
-}
+  // ==================== OUR WORK ====================
 
-.our-work-category {
-  text-align: center;
+  .our-work {
+    background: $gradient;
+    padding-bottom: 4rem;
 
-  .our-work-items {
-    display: grid;
-    grid-template-columns: 1fr 1fr !important;
+    h2 {
+      color: $white;
+      text-shadow: $text-shadow;
+      font-weight: 300;
+      padding-left: 2rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
 
-    li {
-      list-style: none;
-      font-size: clamp(18px, 8vw, 30px);
+    h3 {
+      padding: 4rem 0 4rem 5rem;
+      color: $white;
+      text-shadow: $text-shadow;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    h5,
+    h6 {
+      font-weight: 300;
     }
   }
-}
 
-.our-work-image {
-  display: flex;
-  justify-content: space-evenly;
-
-a {
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-  img {
-    transition: all 0.6s ease;
-    width: calc($index * 7);
-    height: calc($index * 10);
+  .our-work-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
   }
-}
 
-.our-work-image img.zoomable:hover {
-  transform: scale(1.3);
-}
-
-.list-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.gallery-button {
-  display: grid;
-  place-items: center;
-  margin-top: 3rem;
-}
-
-
-// ==================== COUNTER ====================
-
-.counter-container {
-  text-align: right;
-  margin-bottom: 4rem;
-
-  h2 {
-    padding: 6rem 0 5rem 0;
+  h5,
+  h6,
+  .our-work-category .our-work-items li {
     color: $white;
     text-shadow: $text-shadow;
-    font-size: clamp(30px, 8vw, 40px);
-    font-weight: 400;
-  }
-}
-
-.counter {
-  display: grid;
-  place-items: center;
-  text-align: center;
-  margin: 1rem;
-  width: 250px;
-  height: 250px;
-
-  img {
-    width: 50px;
-    text-shadow: $text-shadow;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
 
-  span.num {
-    font-size: clamp(30px, 8vw, 40px);
-    font-weight: 500;
-    color: $white;
-    text-shadow: $text-shadow;
+  .our-work-heading2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-right: 1rem;
+      filter: grayscale(1) brightness(80%);
+    }
+  }
+  
+  .our-work-category {
+    text-align: center;
+
+    .our-work-items {
+      li {
+        list-style: none;
+      }
+    }
   }
 
-  span.text {
-    font-size: 20px;
-    font-weight: 400;
+  .our-work-image {
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      overflow: hidden;
+      border-radius: 8px;
+    }
+
+    img {
+      transition: all 0.6s ease;
+      width: calc($index * 7);
+      height: calc($index * 10);
+    }
   }
-}
 
-// ==================== PARALLAX ====================
+  .our-work-image img.zoomable:hover {
+    transform: scale(1.1);
+  }
 
-.parallax {
-  background: url("/public/assets/img/opinion.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 4rem;
-}
+  .list-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-.parallax-inner {
-  text-align: center;
+  .gallery-button {
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+  }
 
-  h2 {
+
+  // ==================== COUNTER ====================
+
+  .counter-container {
+    text-align: right;
+    margin-bottom: 4rem;
+
+    h3 {
+      padding: 6rem 0 5rem 0;
+      color: $white;
+      text-shadow: $text-shadow;
+      font-weight: 300;
+    }
+  }
+
+  .counter {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin: 1rem;
+    width: 250px;
+    height: 250px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 12px;
+    padding: 2rem;
+    background-color: $white;
+
+    &:hover {
+      transform: translateY(-5px);
+      transition: all .6s ease;
+    }
+
+    img {
+      width: 50px;
+      text-shadow: $text-shadow;
+    }
+
+    span.num {
+      color: $white;
+      text-shadow: $text-shadow;
+      font-size: 30px;
+      font-weight: 600;
+    }
+
+    span.text {
+      font-size: 18px;
+      color: $black;
+      margin: 0;
+    }
+  }
+
+  // ==================== PARALLAX ====================
+
+  .parallax {
+    background: url("/public/assets/img/opinion.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 4rem;
+  }
+
+  .parallax-inner {
+    text-align: center;
+
+    h2 {
+      padding-bottom: 4rem;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: $text-shadow;
+      font-weight: 300;
+    }
+
+    p {
+      padding-bottom: 3rem;
+      color: $white;
+      font-size: 22px;
+      text-shadow: $text-shadow;
+    }
+  }
+
+  // ==================== FIND US ====================
+
+  .find-us {
+    background: $gradient;
     padding-bottom: 4rem;
-    color: rgba(255, 255, 255, 0.9);
-    font-size: clamp(40px, 8vw, 60px);
-    font-weight: 400;
-    text-shadow: $text-shadow;
+
+    h2 {
+      padding: 4rem 0;
+      padding-left: 5rem;
+      color: $white;
+      text-shadow: $text-shadow;
+      font-weight: 300;
+    }
   }
 
-  p {
-    font-size: clamp(25px, 4vw, 40px);
-    font-weight: 300;
-    padding-bottom: 3rem;
-    color: $bg-color;
-    text-shadow: $text-shadow;
+  // ==================== PRE-FOOTER CONTAINER ====================
+
+  .pre-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    img {
+      width: calc($index * 11);
+    }
   }
-}
-
-// ==================== FIND US ====================
-
-.find-us {
-  background: $gradient;
-  padding-bottom: 4rem;
-
-  h2 {
-    padding: 4rem 0;
-    padding-left: 5rem;
-    color: $white;
-    text-shadow: $text-shadow;
-    font-size: clamp(30px, 8vw, 40px);
-    font-weight: 400;
-  }
-}
-
-// ==================== PRE-FOOTER CONTAINER ====================
-
-.pre-footer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-
-  img {
-    width: calc($index * 10);
-  }
-}

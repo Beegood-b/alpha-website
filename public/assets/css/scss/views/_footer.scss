@@ -10,9 +10,7 @@
 
     h5 {
       padding: 3rem 0;
-      font-size: clamp(25px, 8vw, 30px);
       color: $bg-color;
-      font-weight: 400;
       text-shadow: $text-shadow;
     }
 
@@ -27,7 +25,6 @@
     }
 
     li {
-      font-size: clamp(16px, 8vw, 20px);
       font-weight: 200;
       color: $bg-color;
       text-shadow: $text-shadow;
@@ -44,7 +41,7 @@
 
     .contact ul {
       i {
-        font-size: clamp(16px, 8 vw, 18px);
+        font-size: clamp(16px, 8vw, 18px);
         padding-right: 1rem;
       }
     }

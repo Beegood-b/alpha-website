@@ -3,8 +3,39 @@
 body {
   min-width: 320px;
   font-family: "Teko", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  font-weight: 300;
   background-color: $bg-color;
   scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 4.25rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.625rem;
+}
+h4 {
+  font-size: 1.625rem;
+}
+h5 {
+  font-size: 1.625rem;
+}
+h6 {
+  font-size: 1.225rem;
+}
+span {
+  font-size: 2rem;
+  color: $white;
+}
+
+.rotate {
+  transform: rotate(540deg);
+  transition: transform 0.5s ease;
 }
 
 ::-webkit-scrollbar {
@@ -31,7 +62,7 @@ body {
   position: absolute;
   content: "";
   width: 100%;
-  top: 50%;
+  top: 52%;
   left: 0;
   border-top: 2px solid $text-color;
   opacity: 0.2;

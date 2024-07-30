@@ -8,40 +8,39 @@
 
       <div class="our-work-category hide">
         <div class="our-work-heading2">
-          <img src="../../../public/assets/img/shovel.png" width="40" alt="">
-          <h4>CELTNIECĪBAS DARBI</h4>
+          <h5>CELTNIECĪBAS DARBI</h5>
         </div>
 
         <div class="list-group">
           <div class="our-work-list">
-            <h5>Skursteņi</h5>
+            <h6>Skursteņu pārmurēšana</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/8.jpg"><img src="./public/assets/img/8.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/skurstenis-pirms.jpg"><img src="./public/assets/img/skurstenis-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/skurstenis-pec.jpg"><img src="./public/assets/img/skurstenis-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Lieveņi</h5>
+            <h6>Lieveņu izbūve</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/lieveni-pirms.jpg"><img src="./public/assets/img/lieveni-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/lieveni-pec.jpg"><img src="./public/assets/img/lieveni-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Skārds</h5>
+            <h6>Pagraba ieejas izveide</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/pagrabs-pirms.jpg"><img src="./public/assets/img/pagrabs-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/pagrabs-pec.jpg"><img src="./public/assets/img/pagrabs-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Pamati</h5>
+            <h6>Pamatu hidroizolācija</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/hidro-pirms.jpg"><img src="./public/assets/img/hidro-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/hidro-pec.jpg"><img src="./public/assets/img/hidro-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
@@ -50,40 +49,39 @@
 
       <div class="our-work-category hide">
         <div class="our-work-heading2">
-          <img src="../../../public/assets/img/hammer.png" width="40" alt="">
-          <h4>LABIEKĀRTOŠANAS DARBI</h4>
+          <h5>LABIEKĀRTOŠANAS DARBI</h5>
         </div>
 
         <div class="list-group">
           <div class="our-work-list">
-            <h5>Bruģēšāna</h5>
+            <h6>Bruģēšanas darbi</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/brugesana-pirms.jpg"><img src="./public/assets/img/brugesana-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/brugesana-pec.jpg"><img src="./public/assets/img/brugesana-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Miskastes</h5>
+            <h6>Margu uzstādīšana</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/marga-pirms.jpg"><img src="./public/assets/img/marga-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/marga-pec.jpg"><img src="./public/assets/img/marga-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Marga</h5>
+            <h6>Soliņu uzstādīšana</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/solini-pirms.jpg"><img src="./public/assets/img/solini-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/solini-pec.jpg"><img src="./public/assets/img/solini-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Soliņi</h5>
+            <h6>Velo novietņu uzstādišana</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/velo-pirms.jpg"><img src="./public/assets/img/velo-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/velo-pec.jpg"><img src="./public/assets/img/velo-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
         </div>
@@ -91,40 +89,39 @@
 
       <div class="our-work-category hide">
         <div class="our-work-heading2">
-          <img src="./../../../public/assets/img/drill.png" width="40" alt="">
-          <h4>APSAIMNIEKOŠANAS DARBI</h4>
+          <h5>APSAIMNIEKOŠANAS DARBI</h5>
         </div>
 
         <div class="list-group">
           <div class="our-work-list">
-            <h5>Mazgāšana</h5>
+            <h6>Atkritumu izvešana</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/atkritumi-pirms.jpg"><img src="./public/assets/img/atkritumi-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/atkritumi-pec.jpg"><img src="./public/assets/img/atkritumi-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Durvju maiņa</h5>
+            <h6>Jumtu mazgāšana</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/jumts-pirms.jpg"><img src="./public/assets/img/jumts-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/jumts-pec.jpg"><img src="./public/assets/img/jumts-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Nosaukums</h5>
+            <h6>Noteku tīrīšana</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/notekas-pirms.jpg"><img src="./public/assets/img/notekas-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/notekas-pec.jpg"><img src="./public/assets/img/notekas-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Nosaukums</h5>
+            <h6>Sniega tīrīšana</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/sniegs-pirms.jpg"><img src="./public/assets/img/sniegs-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/sniegs-pec.jpg"><img src="./public/assets/img/sniegs-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
@@ -133,41 +130,40 @@
 
       <div class="our-work-category hide">
         <div class="our-work-heading2">
-          <img src="../../../public/assets/img/brush.png" width="40" alt="">
-          <h4>REMONTDARBI</h4>
+          <h5>REMONTDARBI</h5>
         </div>
 
 
         <div class="list-group">
           <div class="our-work-list">
-            <h5>Krāsošana</h5>
+            <h6>Krāsošana</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/krasosana-pirms.jpg"><img src="./public/assets/img/krasosana-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/krasosana-pec.jpg"><img src="./public/assets/img/krasosana-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Hidroizolēšana</h5>
+            <h6>Hidroizolācijas darbi</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/hidrojumts-pirms.jpg"><img src="./public/assets/img/hidrojumts-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/hidrojumts-pec.jpg"><img src="./public/assets/img/hidrojumts-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Nosaukums</h5>
+            <h6>Durvju maiņa</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/durvis-pirms.jpg"><img src="./public/assets/img/durvis-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/durvis-pec.jpg"><img src="./public/assets/img/durvis-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
           <div class="our-work-list">
-            <h5>Nosaukums</h5>
+            <h6>Apmešanas darbi</h6>
             <div class="our-work-image">
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
-              <a href="./public/assets/img/7.jpg"><img src="./public/assets/img/7.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/apmesana-pirms.jpg"><img src="./public/assets/img/apmesana-pirms.jpg" alt="" class="zoomable"></a>
+              <a href="./public/assets/img/apmesana-pec.jpg"><img src="./public/assets/img/apmesana-pec.jpg" alt="" class="zoomable"></a>
             </div>
           </div>
 
